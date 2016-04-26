@@ -1,5 +1,5 @@
 # CodePlants
-Arduino – Leitura de Sensores Em Real Time Com Socket.io e Jhonny-five
+![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Leitura de Sensores Em Real Time Com Socket.io e Jhonny-five
 
 # Install dependencies
 sudo apt-get install nodejs
