@@ -1,5 +1,5 @@
 # CodePlants
-![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Leitura de Sensores Em Real Time Com Socket.io e Jhonny-five
+![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Leitura de Sensores Em Real Time Com Socket.io e Jhonny-five; Reading Rain sensors, hygrometer, LM35 in real time and sxibindo in the browser on a local server, a great model to be applied in small plants of irrigation projects.
 
 # Install dependencies
 ```node
