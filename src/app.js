@@ -21,6 +21,9 @@
  var io = require('socket.io').listen(http);
  var five = require('johnny-five');
 
+ // child process
+ var exec = require('child_process').exec
+
  var Fn = five.Fn; //Define uma lib do johnny-five
 
  var arduino = new five.Board();
@@ -101,4 +104,5 @@
  http.listen(4000, function(){
  	console.log("Servidor On-line em http://localhost:4000");
  	console.log("Para sair Ctrl+C");
+ 	exec('start http://localhost:4000');
  });

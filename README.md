@@ -1,24 +1,24 @@
 # CodePlants
-![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Sensor Reading In Real Time With Socket.io and Jhonny-five; Reading Rain sensors, hygrometer, LM35 in real time and sxibindo in the browser on a local server, a great model to be applied in small plants of irrigation projects.
+![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Sensor Reading In Real Time With Socket.io and Jhonny-five; Reading Rain sensors, hygrometer, LM35 in real time and displaying in the browser on a local server, a great model to be applied in small plants of irrigation projects.
 
-# Install dependencies
-```node
+# Install platform dependencies
+```shell
 - sudo apt-get install nodejs
 - sudo apt-get install npm
+```
 
-- npm install express
-- npm install johnny-five
-- npm install socket.io
-- npm install serialport
+# Install developer dependencies
+```shell
+- npm install
 ```
 # Run server
 ```node
-- node app.js
+- npm start
 - http://localhost:4000
 ```
 
 # Video
-<a href="https://www.youtube.com/watch?v=uy74uJs-35U" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uy74uJs-35U" frameborder="0" allowfullscreen></iframe>
 
 # Slide
 Project presented in 2016 FLISOL Juazeiro.

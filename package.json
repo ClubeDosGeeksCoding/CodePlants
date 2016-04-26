@@ -1,0 +1,30 @@
+{
+  "name": "code-plants",
+  "version": "0.1.0",
+  "description": "Arduino Sensor Reading In Real Time With Socket.io and Jhonny-five",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClubeDosGeeksCoding/CodePlants.git"
+  },
+  "keywords": [
+    "jhonny-five",
+    "socket.io",
+    "arduino"
+  ],
+  "author": "rodriguesfas (https://github.com/rodriguesfas)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClubeDosGeeksCoding/CodePlants/issues"
+  },
+  "homepage": "https://github.com/ClubeDosGeeksCoding/CodePlants#readme",
+  "dependencies":{
+    "express" : "latest",
+    "johnny-five" : "latest",
+    "socket.io" : "latest",
+    "serialport" : "latest"
+  }
+}
