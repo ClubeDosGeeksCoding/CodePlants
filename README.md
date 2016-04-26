@@ -2,16 +2,16 @@
 ![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Leitura de Sensores Em Real Time Com Socket.io e Jhonny-five
 
 # Install dependencies
-sudo apt-get install nodejs
-sudo apt-get install npm
+- sudo apt-get install nodejs
+- sudo apt-get install npm
 
-npm install express
-npm install johnny-five
-npm install socket.io
-npm install serialport
+- npm install express
+- npm install johnny-five
+- npm install socket.io
+- npm install serialport
 
 # Run server
-node app.js
+- node app.js
 http://localhost:4000
 
 # References / Credits
