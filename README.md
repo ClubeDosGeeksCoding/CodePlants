@@ -20,6 +20,10 @@
 # Video
 <a href="https://www.youtube.com/watch?v=uy74uJs-35U" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+# Slide
+Project presented in 2016 FLISOL Juazeiro.
+> https://docs.google.com/presentation/d/1u4RCONbuWaK7X2stX5hfpehgdVxLryWcQZCkPkPdbzk/edit?usp=sharing
+
 # References/Credits
 > - http://johnny-five.io/
 > - http://expressjs.com/
