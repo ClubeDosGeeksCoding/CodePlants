@@ -94,7 +94,7 @@
  * app.get - 
  */
  app.get("/", function(req, res){
- 	res.sendfile("view/index.html");
+ 	res.sendfile("src/view/index.html");
  });
  
 
