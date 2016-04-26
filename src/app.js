@@ -4,6 +4,7 @@
  * @site: http://rodriguesfas.com.br
  * @licesa: MIT
  * @data: 16/04/2016
+ * @vesion: 1.0.0
  */
 
  // Express é um framework que permite cria app web com facilidade com node.js.
