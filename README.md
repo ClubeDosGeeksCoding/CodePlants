@@ -12,7 +12,10 @@
 
 # Run server
 - node app.js
-http://localhost:4000
+- http://localhost:4000
+
+# Video
+<a href="https://www.youtube.com/watch?v=uy74uJs-35U" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # References / Credits
 http://johnny-five.io/
