@@ -1,6 +1,11 @@
 # CodePlants
 ![](https://github.com/ClubeDosGeeksCoding/CodePlants/blob/master/img/logo.jpg) Arduino – Sensor Reading In Real Time With Socket.io and Jhonny-five; Reading Rain sensors, hygrometer, LM35 in real time and displaying in the browser on a local server, a great model to be applied in small plants of irrigation projects.
 
+# Download
+```shell
+- git clone https://github.com/ClubeDosGeeksCoding/CodePlants.git
+```
+
 # Install platform dependencies
 ```shell
 - sudo apt-get install nodejs
