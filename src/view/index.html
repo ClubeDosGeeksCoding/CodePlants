@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <title>CodePlant</title>
+
+ <meta charset="UTF-8">
+ <meta name="description" content="CodePlant" />
+ <meta name="author" content="RodriguesFAS" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <script src="/socket.io/socket.io.js"></script>
+ <script src="assets/js/jquery.min.js"></script>
+
+
+ <!-- Begin -->
+ <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+ <link rel="stylesheet" href="assets/css/neon-core.css">
+ <link rel="shortcut icon" type="image/x-icon" href="assets/img/planta.jpg">
+ <!-- End -->
+
+ <script>
+          var socket = io.connect(); // faz a conexão com o socket.io do node.js
+
+          //recebe o valor "sensorLDR" enviado pelo node.js
+          socket.on('sensorLDR', function(valor){
+              //escreve o "valor" que é passado na função no id #luz
+              $("#luz").text(valor + ' %');
+            });
+          
+          // sensorHIGROMETRO
+          socket.on('sensorHIG_POTEN', function(hygrometer){
+           
+            $("#sensorHIG_POTEN").text(hygrometer + ' %');
+          });
+
+          // sensorCHUVA
+          socket.on('sensorCHUVA', function(valor){
+            $("#sensorCHUVA").text(valor);
+          });
+
+          // sensorLM35
+          socket.on('sensorLM35', function(celsius){
+            $("#sensorLM35").text(celsius);
+          });
+
+          $('#button').click(function(e){
+            socket.emit('click');
+            e.preventDefault();
+          });
+        </script>
+
+      </head>
+
+      <body>
+
+        <div class="container">
+          <h1><img src="assets/img/planta.jpg" width="56" alt="" /> Informações:</h1>
+          <div class="row">
+
+            <div class="col-sm-3">
+
+              <div class="tile-stats tile-red">
+                <div class="icon"><i class="entypo-adjust"></i></div>
+                <div class="num" data-start="0" data-end="0%" data-postfix="" data-duration="1500" data-delay="0">
+                  <span id="luz">0%</span>
+                </div>
+                <h3>Luminosidade</h3>
+                <p>Sensor LDR.</p>
+              </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="tile-stats tile-green">
+                <div class="icon"><i class="entypo-chart-bar"></i></div>
+                <div class="num" data-start="0" data-end="0%" data-postfix="" data-duration="1500" data-delay="600">
+                  <span id="sensorHIG_POTEN">0%</span>
+                </div>
+                <h3>Umidade do Solo</h3>
+                <p>Sensor Higrômetro.</p>
+              </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="tile-stats tile-aqua">
+                <div class="icon"><i class="entypo-droplet"></i></div>
+                <div class="num" data-start="0" data-end="0mm" data-postfix="" data-duration="1500" data-delay="1200">
+                  <span id="sensorCHUVA">0mm</span>
+                </div>
+                <h3>Chuva</h3>
+                <p>Sensor de nível.</p>
+              </div>
+
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="tile-stats tile-blue">
+                <div class="icon"><i class="entypo-thermometer"></i></div>
+                <div class="num" data-start="0" data-end="ºC" data-postfix="" data-duration="1500" data-delay="1800">
+                  <span id="sensorLM35">ºC</span>
+                </div>
+                <h3>Temperatura</h3>
+                <p>Sensor LM35.</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <footer>
+          <div>
+            <p align="center">© 2016 - By <a href="https://rodriguesfas.github.io" target="_blank">RodriguesFAS</a></p>
+          </div>
+        </footer>
+
+      </body>
+      </html>
