@@ -24,6 +24,7 @@
 
 # Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uy74uJs-35U" frameborder="0" allowfullscreen></iframe>
+[![Youtube video](https://img.youtube.com/vi/uy74uJs-35U/0.jpg)](https://www.youtube.com/watch?v=uy74uJs-35U)
 
 # Slide
 Project presented in 2016 FLISOL Juazeiro.
